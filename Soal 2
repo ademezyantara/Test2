@@ -1,0 +1,3 @@
+SELECT * FROM ultravoucher.students;
+
+select a.id, a.name, b.name as `parents_name` from ultravoucher.students a LEFT JOIN ultravoucher.students b ON a.parents_id = b.id;
